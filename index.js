@@ -35,6 +35,10 @@ app.get("/ryuk", (req, res) => {
     res.render("ryuk");
 });
 
+app.get("/episodes", (req, res) => {
+    res.render("episodes");
+});
+
 
 //  START THE SERVER
 app.listen(port, () => {
