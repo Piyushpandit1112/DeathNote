@@ -23,6 +23,19 @@ app.get("/", (req, res) => {
 });
 
 
+app.get("/lchar", (req, res) => {
+    res.render("lchar");
+});
+
+app.get("/light", (req, res) => {
+    res.render("light");
+});
+
+app.get("/ryuk", (req, res) => {
+    res.render("ryuk");
+});
+
+
 //  START THE SERVER
 app.listen(port, () => {
     console.log(`The application started successfully on port ${port}`);

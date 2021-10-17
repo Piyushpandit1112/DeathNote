@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    
 }
 
 /* Extra */
@@ -15,6 +16,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 .logo{
     font-size: 25px;
@@ -98,7 +100,7 @@ nav img{
     /* infinte times to run */
     animation: text 10s steps(21) infinite alternate; 
     margin: 0 200px;
-    border-right: 3px solid black;
+    /* border-right: 3px solid black; */
 }
 /* text is the name of the animation */
 @keyframes text {
@@ -140,24 +142,54 @@ nav .fa{
 
 /* characters */
 .characters{
-    /* background: #eee5e9; */
+    background: #070c0d;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+.characters .heading{
+    display: inline-block;
+    position: relative;
+    color: #3b7cf5;
+    font-size: 4vw;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: -49px;
+}
+
+.characters .heading:before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    background: #393939;
+}
+
+.characters .heading b{
+    color: #fff;
 }
 /* fr means fraction */
 .characters h1{
-    text-align: center;
-    margin-top: 24px;
-    font-size: 44px;
-    text-transform: uppercase;
+    /* text-align: center; */
+    /* margin-top: 24px; */
+    /* font-size: 44px;
+    text-transform: uppercase; */
 }
 
-.characters h1:hover{
+/* .characters h1:hover{
     text-shadow: 11px 7px 13px grey;
     text-decoration-line: underline;
     transition: 2s;
-}
+} */
 
 .characters .grid{
-    margin: 80px;
+    /* margin: 30px; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
@@ -168,14 +200,16 @@ nav .fa{
 
 .characters .grid>article{
     /* background: #eee5e9; */
-    background: black;
-    color: white;
+    background: #222;
+    color: #fff;
     border:none;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     text-align: center;
     width: 250px;
     transition: transform .3s;
+    position: relative;
+    bottom: 36px;
 }
 
 .characters .grid>article:hover{
@@ -191,6 +225,7 @@ nav .fa{
 
 .characters .text{
     padding: 0 20px 20px;
+    color: #fff;
 }
 
 .characters .text .charactertext{
@@ -200,7 +235,10 @@ nav .fa{
 
 .characters .text h3{
     text-transform: uppercase;
+    color: #fff;
 }
+
+
 
 .characters .text button{
     /* margin-top: 10px;
@@ -230,23 +268,24 @@ nav .fa{
 }
 
 .characters .text .hero-btn1:hover{
-    border: 1px solid #756f6e1f;
-    background: #756f6e1f;
+    border: 1px solid #3b7cf5;
+    background: #3b7cf5;
     transition: 1s;
 }
 
 /* Manga */
 .manga{
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(/assets/img/deathnotewallpaper2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(/assets/deathnotewallpaper2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
+    width: 100%;
 }
 .manga .containerManga{
-    padding: 50px;
+    /* padding: 50px; */
 }
 .manga a{
     font-size: 4.2rem;
@@ -257,6 +296,8 @@ nav .fa{
     /* background-color: #f44336; */
     padding-left: 0;
     margin: 0 auto;
+    position: relative;
+    top: -30px;
 }
 
 .manga a:hover{
@@ -264,10 +305,31 @@ nav .fa{
     transition: 0.2s;
 }
 
-.manga h2{
-    font-size: 2rem;
-    color: whitesmoke;
-    padding: 1.2rem 0;
+.manga .heading{
+    display: inline-block;
+    position: relative;
+    color: #3b7cf5;
+    font-size: 4vw;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    margin-top: -50px;
+}
+
+.manga .heading:before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    background: #393939;
+}
+
+.manga .heading b{
+    color: #fff;
 }
 
 .manga p{
@@ -275,27 +337,179 @@ nav .fa{
     letter-spacing: 1px;
     color: whitesmoke;
     opacity: 0.7;
+    margin-top: -31px;
+    padding: 29px 2px;
 }
 
-/* .manga .containerManga{
-    width: 100%;
-    height: 100%;
-} */
-
-/* .manga .containerManga h1{
-    padding: 46px;
-} */
-
-/* .manga .containerManga embed{
-    height: 174px;
-    margin-bottom: 83px;
+/* testinomial */
+.testinomial{
     position: relative;
-    top: 1px;
-    width: 49%;
-    background: transparent;
+    min-height: 100vh;
+    width: 100%;
+    background: #070c0d;
+    overflow: hidden;
 }
 
-.manga .containerManga .far{
-    font-size: 50px;
-
+/* .testinomial:before{
+    position: absolute;
+    content: '';
+    width: 2000px;
+    height: 100%;
+    bottom: -70%;
+    border-radius: 50%;
+    background: #3b7cf5;
 } */
+
+.testinomial .heading{
+    display: inline-block;
+    position: relative;
+    color: #3b7cf5;
+    font-size: 4vw;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.testinomial .heading:before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    background: #393939;
+}
+
+.testinomial .heading b{
+    color: #fff;
+}
+
+.testinomial .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.testinomial .wrapper .containertest{
+    position: relative;
+    width: 350px;
+    color: #fff;
+    background: #222;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.wrapper .containertest .profile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    width: 100%;
+    display: block;
+}
+
+.wrapper .containertest .profile .imgBox{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 8px solid #070c0d;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wrapper .containertest .profile .imgBox img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    object-fit: cover;
+}
+
+.wrapper .containertest .profile .imgBox:hover img{
+    filter:saturate(140%);
+    transform: scale(0.95);
+}
+
+.wrapper .containertest .profile h2{
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.wrapper .containertest p{
+    margin-top: 50px;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.wrapper .containertest .left{
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    color: #3b7cf5;
+}
+
+.wrapper .containertest .right{
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    color: #3b7cf5;
+}
+
+.wrapper .containertest .social{
+    width: 100%;
+}
+
+.wrapper .containertest .social i{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.wrapper .containertest .social i:hover{
+    background: #3b7cf5;
+}
+
+/* Footer  */
+.footer{
+    background: #070c0d;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fab{
+    color: #3b7cf5;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.footer .privacy{
+    color:#3b7cf5;
+}
+
+
+
