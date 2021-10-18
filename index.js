@@ -39,6 +39,23 @@ app.get("/episodes", (req, res) => {
     res.render("episodes");
 });
 
+app.get("/deathnote", (req, res) => {
+    res.render("deathnote");
+});
+
+app.get("/kira",(req,res)=>{
+    res.render("kira");
+})
+
+app.post('/deathnote', (req, res) => {
+
+    res.render('kira');
+});
+
+
+
+
+
 
 //  START THE SERVER
 app.listen(port, () => {

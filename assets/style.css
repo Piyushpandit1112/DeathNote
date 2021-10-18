@@ -3,7 +3,11 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* Extra */
